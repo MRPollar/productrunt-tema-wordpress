@@ -6,6 +6,10 @@
    font-family: 'Roboto';
 }
 
+html,body{
+   height: 100%;
+}
+
 .container{
    padding: 0 2%;
    width: 100%;
@@ -15,8 +19,7 @@
 
 section.topo{
    background: linear-gradient(114deg, #250e8a, #00f9f7);
-   padding-bottom: 80px;
-   padding-top: 40px;
+   padding: 40px 0;
    position: relative;
    width: 100%;
    position: relative;
@@ -288,11 +291,6 @@ section.depoimentos{
    z-index: 10;
 }
 
-/* section.depoimentos .container{
-   max-width: 700px;
-   overflow: hidden;
-} */
-
 section.depoimentos .container h2{
    text-align: center;
    font-weight: normal;
@@ -340,6 +338,17 @@ section.depoimentos .depoimento-single img{
    height: 70px;
    object-fit: cover;
    border-radius: 50px;
+}
+
+section.depoimentos .fotos-equipe{
+   display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   gap: 5px;
+   justify-content: center;
+}
+
+section.depoimentos .foto-equipe img{
+   display: block;
 }
 
 
@@ -417,6 +426,101 @@ footer.footer-links .container-lista li a{
 
 footer.footer-links .container-lista li a:hover{
    color: #4b31bc;
+}
+
+footer.footer-links.contato-footer{
+   padding: 40px 0;
+}
+
+
+
+section.equipe{
+   padding: 50px 0;
+}
+
+section.equipe h2{
+   font-size: 57px;
+   width: 100%;
+   max-width: 650px;
+   margin-bottom: 30px;
+   color: #0b003d;
+}
+
+section.equipe .container-equipe{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: top;
+}
+
+section.equipe .container-equipe p{
+   max-width: 400px;
+   font-size: 24px;
+   color: #250e8a;
+}
+
+section.equipe .container-equipe img{
+   max-width: 100%;
+}
+
+
+section.contatos{
+   padding: 50px 0;
+}
+
+section.contatos .container{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   justify-content: space-between;
+   align-items: top;
+}
+
+section.contatos .container h2{
+   font-size: 50px;
+   margin-bottom: 30px;
+}
+
+section.contatos .container p{
+   margin-bottom: 10px;
+}
+
+section.contatos .container img{
+   max-width: 100%;
+}
+
+section.contatos .container ::placeholder{
+   color: #4b31bc;
+}
+
+section.contatos .container form{
+   text-align: right;
+}
+
+section.contatos .container input[type=text],
+section.contatos .container textarea{
+   width: 100%;
+   padding: 10px 15px;
+   display: inline-block;
+   margin-bottom: 15px;
+   border: 1px solid #4b31bc;
+   outline: none;
+   border-radius: 3px;
+   color: #0b003d;
+}
+
+section.contatos .container textarea{
+   height: 250px;
+   resize: none;
+}
+
+section.contatos .container button{
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 12px;
+   padding: 10px 15px;
+   background-color: #0b003d;
+   color: white;
+   border-radius: 3px;
+   cursor: pointer;
 }
 
 
@@ -566,4 +670,90 @@ footer.footer-links .container-lista li a:hover{
    footer.footer-links .container img{
       margin: 30px auto 0 auto;
    }
+
+   
+
+
+
+   section.equipe h2{
+      font-size: 25px;
+      max-width: none;
+   }
+   
+   section.equipe .container-equipe{
+      display: grid;
+      grid-template-columns: 100%;
+      align-items: top;
+   }
+   
+   section.equipe .container-equipe p{
+      max-width: none;
+      font-size: 16px;
+   }
+
+   section.equipe .container-equipe img{
+      display: none;
+   }
+
+
+   section.depoimentos .fotos-equipe{
+      gap: 10px;
+      grid-template-columns: 100%;
+   }
+
+   section.depoimentos .fotos-equipe img{
+      margin: 0 auto;
+   }
+
+
+
+   section.contatos{
+      padding: 50px 0;
+   }
+   
+   section.contatos .container{
+      grid-template-columns: 100%;
+   }
+   
+   section.contatos .container h2{
+      font-size: 25px;
+   }
+   
+   section.contatos .container img{
+      display: none;
+   }
+   
+   section.contatos .container form{
+      margin-top: 30px;
+   }
+   
+   section.contatos .container input[type=text],
+   section.contatos .container textarea{
+      width: 100%;
+      padding: 10px 15px;
+      display: inline-block;
+      margin-bottom: 15px;
+      border: 1px solid #4b31bc;
+      outline: none;
+      border-radius: 3px;
+      color: #0b003d;
+   }
+   
+   section.contatos .container textarea{
+      height: 250px;
+      resize: none;
+   }
+   
+   section.contatos .container button{
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 10px 15px;
+      background-color: #0b003d;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+   }
+
+
 }
