@@ -19,15 +19,15 @@
             </div><!--logo-->
             <ul class="menu-desktop">
                <li><a href="index.php">Home</a></li>
-               <li class="selected"><a href="sobre.php">Sobre</a></li>
-               <li><a href="contato.php">Contatos</a></li>
+               <li><a href="sobre.php">Sobre</a></li>
+               <li class="selected"><a href="contato.php">Contatos</a></li>
             </ul><!--menu-desktop-->
             <i style="color:white;" class="btn-toggle fa-solid fa-bars"></i>
             <div class="menu-mobile">
                <ul>
                   <li><a href="index.php">Home</a></li>
-                  <li class="selected"><a href="sobre.php">Sobre</a></li>
-                  <li><a href="contato.php">Contatos</a></li>
+                  <li><a href="sobre.php">Sobre</a></li>
+                  <li class="selected"><a href="contato.php">Contatos</a></li>
                </ul>
             </div>
 
